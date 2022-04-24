@@ -23,29 +23,30 @@ class Choice(models.Model):
     def __str__(self):
         return self.choice_text
 
-class Company(models.Model):
-    name = models.CharField(max_length=255)
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
+# class Company(models.Model):
+#     name = models.CharField(max_length=255)
+#     created_at = models.DateTimeField(auto_now_add=True,null=True)
+#     updated_at = models.DateTimeField(auto_now=True,null=True)
 
-    def __str__(self):
-        return self.name
+#     def __str__(self):
+#         return self.name
 
-class Post(models.Model):
-    name = models.CharField(max_length=255)
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
-    company = models.ForeignKey(Company, verbose_name='投稿', on_delete=models.CASCADE)
+# class Post(models.Model):
+#     name = models.CharField(max_length=255)
+#     created_at = models.DateTimeField(auto_now_add=True,null=True)
+#     updated_at = models.DateTimeField(auto_now=True,null=True)
+#     company = models.ForeignKey(Company, verbose_name='投稿', on_delete=models.CASCADE)
 
-    def __str__(self):
-        return self.name
+#     def __str__(self):
+#         return self.name
 
-class Post_detail(models.Model):
-    body = models.CharField(max_length=255)
-    kyodo = models.CharField(max_length=255)
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
-    post = models.ForeignKey(Post, verbose_name='投稿詳細', on_delete=models.CASCADE)
+# class Post_detail(models.Model):
+#     body = models.CharField(max_length=255)
+#     kyodo = models.CharField(max_length=255)
+#     created_at = models.DateTimeField(auto_now_add=True)
+#     updated_at = models.DateTimeField(auto_now=True)
+#     post = models.ForeignKey(Post, verbose_name='投稿詳細', on_delete=models.CASCADE)
+#     duedate = models.DateTimeField(null=True)
 
-    def __str__(self):
-        return self.body
+#     def __str__(self):
+#         return self.body

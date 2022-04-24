@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/UEHARA/Downloads/djangoapp-master-2/myvenv"
+VIRTUAL_ENV="/Users/UEHARA/Desktop/DjangoApp/djangoapp-master-2/myvenv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

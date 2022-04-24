@@ -80,7 +80,9 @@
     
     </div>
     
-
+    <p>{{A_list}}</p>
+    <p>{{AA_list}}</p>
+    <p>{{AAA_list}}</p>
    <div class="row">
     <div class="container-fluid bg-white col-7 ml-5 my-5">
     <table class="table table-sm">
@@ -91,9 +93,9 @@
       </tr>
       {% for detail in post_detail_list %}
       <tr>
-        <td>タグA</td>
-        <td>{{ detail.created_at }}</td>
-        <td>{{ detail.kyodo }}</td>
+        <td>{{ detail.body }}</td>
+        <td>{{ detail.duedate }}</td>
+        <td>{{ detail.post.name }}</td>
       </tr>
       {% endfor %}
     </table>
