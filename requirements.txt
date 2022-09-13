@@ -1,203 +1,87 @@
-市場データ活用タスク
+LLC
 
-市場データを使って
+* Code: 10.99.31
+* Display:  10.99.31 Non-HP supply in use.
+* Description:  The printer displays this message when a used supply (a remanufactured or refilled genuine HP or non-HP product) has been installed. The 10.99.31 is an event log only message, it will not show on the control panel. The only message to display will be Used supply in use message.
+* Remedy:  The toner cartridge has been previously used. Touch the OK to continue. NOTE: Removing a cartridge from one printer and then installing it in a different printer (for testing functionality) will cause this event code.
 
-■テーマ概要１
-【成果】開発における市場データ活用の基盤を構築した
-・市場データから課題を抽出して深掘りすることができる、市場データ活用サイトを公開した
-・開発の機能軸リーダ約30名と連携し、市場データを組織的に活用する仕組み作りを行なった
-【技術概要】
-・開発と品保で協業して市場データ活用タスクを立ち上げ、以下の３つの施策に取り組んだ
-・知りたいこ起点の情報を発信する
-・データ更新の自動化環境を構築する
-・開発内での活用推進を強力に進める
+* Code: 10.99.34
+* Display:  10.99.34 Used supply in use
+* Description:  The printer displays this message when a used supply (a remanufactured or refilled genuine HP or non-HP product) has been installed. The 10.99.34 is an event log only message, it will not show on the control panel. The only message to display will be Used supply in use message.
+* Remedy:  The toner cartridge has been previously used. Touch the OK to continue. NOTE: Removing a cartridge from one printer and then installing it in a different printer (for testing functionality) will cause this event code.
 
-■テーマ概要２
-【発信】【アピールポイント】
-種類見せ方・できること起点→知りたいこと起点
-アクション・受動的に眺める→能動的に深掘りできる
+* Code: 10.99.40
+* Display:  10.99.40 Genuine HP supplies installed
+* Description:  The printer displays this message when a new cartridge has been installed and all cartridges are Genuine HP.
+* Remedy:  Touch the (OK) to continue.
 
-【活用】【アピールポイント】
-活用される場面・市場で発生した案件解決→潜在的な課題の抽出
-活用部門・品保中心→品保と開発
-
-■市場データとは
-本体のログ情報、クレーム情報、サービス情報など、様々な利用可能なデータが存在する
-いくつ知ってる？
-
-■市場データ活用の目的
-現状では市場データを製品構想や品質改善に有効に活用できていない
-分析結果を製品開発プロセス全体に共有し、顧客視点の製品開発を実現する
-
-■市場データ活用タスクの活動
-１.市場データ活用ポータルサイトの作成
-２.データ更新の自動化環境
-３.開発内での活用推進
-
-■ポータルサイトの紹介１
-4月にテスト版を公開し、11月に正式版として公開しました
-・ポータルサイトの紹介をするね
-・今年はAutoSendデータを中心として、様々なグラフを作ったよ！
-深掘りに必要な情報も色々あるよ！
-
-■ポータルサイトの紹介2
-開発と品保から意見を聞き取り、知りたいこと起点のグラフを公開しています
-・故障エラーに関するグラフを見てみよう！
-・おっ、P1161とP578のスキャナ故障が多いぞ！
-・関連グラフとして、サービスパーツ受注率を見てみよう！
-P1161は確かにユニット交換が多いが、P578は交換に至らないエラーが多いのかもしれない！
-
-■ポータルサイトの紹介3
-深掘りに必要なデータや情報をダウンロードできます
-・生データをダウンロードして、故障エラーを分析してみよう！
-・AutoSendデータで、ログをじっくり考察できるよ！
-P573のスキャナ故障エラーが出た後に、すぐに治ってるみたいだなー！
-・CSOデータで、どのような要因でクレームになっているかも分かるよ！
+* Code: 10.99.41
+* Display:  10.99.41 Unsupported Supply in use
+* Description:  The indicated toner cartridge is for a different printer.
+* Remedy:  Remove the indicated toner cartridge, and then install the correct cartridge for this printer.
 
 
-■市場データの活用推進
-市場データ活用タスクと開発機能軸リーダと連携し、潜在的な課題抽出に取り組んでいます
+* Code: 10.0X.00
+* Display:  10.0X.00 Supply memory error
+* Description:  • 10.00.00 Black toner cartridge • 10.01.00 Cyan toner cartridge • 10.02.00 Magenta toner cartridge • 10.03.00 Yellow toner cartridge The printer is unable to read the toner cartridge data. The toner cartridge is present but defective. When this error occurs, a question mark appears on the gas gauge of the supply or supplies with the error. If multiple supplies have this error, a 10.0X.Y0 error for the first supply detected with the error displays. After the user resolves the error that corresponds to the first supply, another 10.0X.00 error displays for the next supply. This continues for all supplies memory errors.
+* Remedy:  1. Open the front door and remove the toner cartridge suspected. 2. Check the supplies memory chip. If it is damaged, replace the toner cartridge. 3. Reinsert the toner cartridge. 4. Close the front door.5. If the message displays again, turn the printer off, then on again.6. If the error persists, replace the toner cartridge suspected.7. If the error persists elevate the case using standard procedures.
 
-給紙搬送(メカ)、EAL(メカ)：リフタ故障の要因調査
-SCN(メカ)、SCN(電気)：スキャナ故障の要因調査
-低圧電源(電気)：低圧電源故障の要因調査
-定着(電気)：定着温調エラーの要因調査
-駆動(電気)：ファン故障の要因調査
-定着(メカ)、キーパーツ定着(プロセス)、EAL(プロセス)：定着器の早期交換要因調査
-転写(メカ)、キーパーツ転写(プロセス)：ITBの早期交換要因調査
-センサ(電気)、高圧電源(電気)：CRG寿命報知の実力確認
-排紙(メカ)：排紙OPの課題調査
-環境対応：MPモードの使われ方調査
-S活(プロセス)：CRG周りの課題調査
-本体(メカ)：
+* Code: 10.0X.10
+* Display:  10.0X.10 Supply memory error
+* Description:  The printer is unable to read the toner cartridge data. The toner cartridge is present but defective. When this error occurs, a question mark appears on the gas gauge of the supply or supplies with the error. If multiple supplies have this error, a 10.0X.10 error for the first supply detected with the error displays. After the user resolves the error that corresponds to the first supply, another 10.0X.Y0 error displays for the next supply. This continues for all supplies memory errors. • 10.00.10 : Black toner cartridge • 10.01.10 : Cyan toner cartridge • 10.02.10 : Magenta toner cartridge • 10.03.10: Yellow toner cartridge
+* Remedy:  1. Open the front door and remove the toner cartridge.2. Check the supplies memory chip. If it is damaged, replace the toner cartridge.3. Reinsert the toner cartridge.4. Close the front door. If the message reappears, turn the printer off, and then on again.5. If the error persists, replace the toner cartridge.6. If the error persists elevate the case using standard procedures.
 
+* 10.0X.15
+* Display:  10.0X.15 Install <supply>
+* Description:  A supply is either not installed or not correctly installed in the printer. The 10.XX.15 is an event log only message, it will not show on the control panel. The only message to display will be Install <Supply>message. • 10.00.15: Black toner cartridge (event code) • 10.01.15: Cyan toner cartridge (event code) • 10.02.15: Magenta toner cartridge (event code) • 10.03.15: Yellow toner cartridge (event code)
+* Remedy:  Replace or reinstall the toner cartridge correctly to continue printing.
 
-■活用事例１：リフタ故障の要因調査
-気付き：FO構成の製品のリフタ故障が多い
-仮説立案：「ユーザ操作要因」「本体故障要因」を考えた
-検証：データ→ユーザ操作要因の可能性が高い
-　　　実機→「CST不完全装着」「後端規制ズレ」が主要因と特定
-提案：設計構想書へのFB、オペパネ・サービスマニュアルの改善をhpに提案した
+* Code: 10.0X.25
+* Display:  10.0X.25 Wrong cartridge in <color> slot
+* Description:  The printer displays this message when a toner cartridge is installed in the wrong slot. The 10.XX.25 is an event log only message, it will not show on the control panel. The only message to display will be Wrong cartridge in <color> slot message. The indicated cartridge is installed in the wrong position: • 10.00.25: Black toner cartridge (event code) • 10.01.25: Cyan toner cartridge (event code) • 10.02.25: Magenta toner cartridge (event code) • 10.03.25: Yellow toner cartridge (event code)
+* Remedy:  From left to right, the toner cartridges should be installed in this order: • Yellow • Magenta • Cyan • Black Reinstall the toner cartridges in the correct slots.
 
-■活用事例２：排紙OPの課題調査
-気付き：排紙OPはホールユニット交換が多い
-仮説立案：深いユニットはホールで、交換しやすいユニットはユニット交換か？
-　　　　　経験の少ないOPは浅い問題でもホールになりやすい？
-　　　　　ホールになりやすいエラーとなりにくいエラーがあるか？
-提案：
+* Code: 10.00.33
+* Display:  10.00.33
+* Description:  A used supply is in use (end of life).
+* Remedy:  No action necessary.
 
-・排紙OPのクレームがある製品を確認する
-・要因と交換ユニットのピボットグラフを作る
-・本体、給紙OP、排紙OPのホールユニット交換割合を確認する
-・台数とホールユニット交換の関係性を確認する（市場台数が少ないものは不慣れなのでホールになる？）
+* Code: 10.00.34
+* Display:  10.XX.34 Used Supply In Use
+* Description:  The print cartridge is used. Black print cartridge
+* Remedy:  Removing a cartridge from one product and then installing it in a different product (for testing functionality) will cause this event code.
 
-■活用事例３：スキャナ故障の要因調査
-気付き：1500/1600のスキャナのサービスパーツ受注率が低い
-仮説立案：対策効果が出ている
-検証：
+* Code: 10.0X.35
+* Display:  10.0X.35 Incompatible <supply>
+* Description:  The printer displays this message when the indicated supply is not compatible with this printer. The 10.XX.35 is an event log only message, it will not show on the control panel. The only message to display will be Incompatible <supply> message. • 10.00.35: Black toner cartridge (event code) • 10.01.35: Cyan toner cartridge (event code) • 10.02.35: Magenta toner cartridge (event code) • 10.03.35: Yellow toner cartridge (event code)
+* Remedy:  Install a supply that is designed for this printer. See the printer repair and replacement service manual for the correct supply part numbers.
 
+* Code: 10.00.40
+* Display:  10.XX.40 Genuine HP Supplies Installed
+* Description:  A genuine HP print cartridge has been installed. Black print cartridge
+* Remedy:  No action necessary.
 
+* Code: 10.0X.60
+* Display:  10.0X.60 <Supply> low
+* Description:  The printer indicates when a supply level is low. Actual toner cartridge life might vary. You do not need to replace the toner cartridge at this time unless print quality is no longer acceptable. The 10.XX.60 is an event log only message, it will not show on the control panel. The only message to display will be <Supply> low message. • 10.00.60: Black toner cartridge (event code) • 10.01.60: Cyan toner cartridge (event code) • 10.02.60: Magenta toner cartridge (event code) • 10.03.60: Yellow toner cartridge (event code)
+* Remedy:  If print quality is no longer acceptable, replace the toner cartridge. Consider purchasing a replacement cartridge so it is available when the installed cartridge has reached the end of its estimated life.
 
+* Code: 10.0X.69
+* Display:  10.0X.69 <Supply> very low
+* Description:  The printer indicates when a supply level is very low. Actual toner cartridge life might vary. Consider having a replacement toner cartridge available to install when print quality is no longer acceptable. You do not need to replace the toner cartridge at this time unless the print quality is no longer acceptable. The 10.XX.69 is an event log only message, it will not show on the control panel. The only message to display will be <Supply> very low message. • 10.00.69: Black toner cartridge very low (event code) • 10.01.69: Cyan toner cartridge very low (event code) • 10.02.69: Magenta toner cartridge very low (event code) • 10.03.69: Yellow toner cartridge very low (event code)
+* Remedy:  If print quality is no longer acceptable, replace the toner cartridge.
 
-■データ環境の構築状況
+* Code: 10.0X.70
+* Display:  10.0X.70 Printing past very low
+* Description:  The printer indicates when one of the consumables is very low. The actual remaining consumable life might vary. You do not need to replace the toner cartridge at this time unless the print quality is no longer acceptable. The 10.XX.70 is an event log only message, it will not show on the control panel. The only message to display will be a warning message <Supply> very low . • 10.00.70: Black toner cartridge (event code) • 10.01.70: Cyan toner cartridge (event code) • 10.02.70: Magenta toner cartridge (event code) • 10.03.70: Yellow toner cartridge (event code)
+* Remedy:  If print quality is no longer acceptable, replace the toner cartridge.
 
+* Code: 10.0X.91
+* Display:  10.0X.91 <supply> error
+* Description:  Toner cartridge motor stall. • 10.00.91: Black toner cartridge • 10.01.91: Cyan toner cartridge • 10.02.91: Magenta toner cartridge • 10.03.91: Yellow toner cartridge
+* Remedy:  1. Check Event log for occurrences of 59.6X errors. If these are seen troubleshooting that error. 2. Perform the image-drum motors component test under the Troubleshooting menu. 3. Replace motor if it fails the test. If test OK replace cartridge.
 
-
-■今後のやるべきこと
-①上層部の理解を得る
-　→できてると思うので、後は成果が重要
-②市場データ活用の成果を出す
-　→機能軸リーダのアイデアを掘り起こす
-③市場データを使ってみたいと思わせる
-　→
-・市場データの全体像を説明する
-　→ポータルサイト
-・活用事例を見せる
-　→機能軸の成果
-・簡単に分析できるようにする
-　・ダッシュボードで深掘りできる
-　　→故障エラーとサービスパーツ
-　・ツールで簡単に分析できる
-　　→直前エラーとCSO
-　・必要なデータを簡単に入手できる
-　・必要な粒度の情報を簡単に入手できる
-・高度な分析結果を見せる
-　→早期交換要因の分析
-・フォロー体制を築く
-・意見をもらう
-　→第一第二技開の一部メンバーに協力してもらう
-
-今後の進め方
-・桑田室長や矢野部長の力を借りる
-・低圧の分かったこと
-・排紙OPのストーリー
-
-・散財しているデータを一元管理して、活用できるようにする
-・どう分析するかではなく、何を分析するか？
-・データ分析をミッションとする組織だと活用がうまくいかない
-・分析を請け負う部門ではなく、支えて一緒に進められる組織
-・基本的にはHPにデータをもらわなければならず、もらう為に価値を提供する必要がある
-・データドリブン型組織を作る目的→仕事の仕方を変えるため
-・課題に向き合うデータ分析だけではなく、課題発見や施策の成功確率を高めるための分析が必要
-・データ活用を組織化する目的
-　・ビジネス目標の設定　←機能軸リーダを設定
-　・分析アプローチ設計　←分析のアプローチを理解、体験してもらう
-　・分析基盤の拡充　←ポータルサイト
-　・分析データの拡充　←データを一元管理
-　・分析の高度化　←開推
-　・ビジネス活用　←機能軸リーダ
-
-■相談したい内容
-・技術展の概要
-・今後やるべきこと
-
-・市品、技開、開推でそれぞれ課題発掘したい
-　技開：新たに開発すべきテーマの提案
-　　　　EALの将来、オペパネの改善
-　開推：開発プロセス革新すべきテーマの提案
-　　　　スキャナ、MBDに繋げる
-　市品：JAM率の市場発生状況から考える搬送性評価方法の提案
-　　　　環境評価方法の提案
-
-
-■石船さんへのメール
-現在、HPとメモでやりとりしている畿内残留JAMに対しての相談したいです。
-この件は昨年末、一度、相談せていただいた内容であり、次期製品に向けて、対策を入れるべき課題かの調査をしています。
-昨年末に相談させていただいた時の資料を添付します。
-また、HPのと議論している内容はこちらです。
-
-HPの分析に時間がかかり、まだ答えには辿り着いていませんが、徐々に分かってきたので、石船主観の見解をお伺いしたいです、
-
-【昨年末の振り返り】
-一般的な畿内残留JAMは、直前にJAM等の理由で残留紙が本体内に残ることで発生する。
-我々が市場データから気づいたことは、JAMなどの直前のエラーが何もないのに、いきなり畿内残留JAMが発生している本体が多いということです。
-この直前のエラーが無い畿内残留JAMがP1970のみではなく各機種で発生しており、クレームにも繋がっている。
-そこで、自動排出のパターンを増やし、ユーザが経験する畿内残留JAMを減らせないか？
-
-【HPの分析結果】
-P1970の畿内残留JAMが発生している要因は、通紙中の「電源ボタン長押し」や「コンセント抜きor電源瞬断」が50%を占めている。
-通常想定外に、何らかの要因でユーザーはこのようなアクションをすることで、畿内残留JAMを体験している。
-
-【相談内容】
-不要なエラー発生を避けるために、「電源ボタン長押し」や「コンセント抜きor電源瞬断」後には、自動排出させられないか？
-印字率も一般的には低印字のユーザが多いはずなので、印字率が一定値以下で、上記の条件に該当する時には自動排出するということはできるでしょうか？
-技術的な見解を伺いたいです。
-また、市場では、想定外に「電源ボタン長押し」や「コンセント抜きor電源瞬断」も発生していそうですが、このような現象を考慮することで、
-FWとして何か対策できることが、アイデアを頂きたいです。
-あくまでも、開発中製品ではなく、次期製品に向けた調査になりますので、広い視点で考察いただけると助かります。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* Code: 10.0X.92
+* Display:  10.0X.92 <Cartridge> error
+* Description:  Toner cartridges not engaged. • 10.00.92: Black toner cartridge • 10.01.92: Cyan toner cartridge • 10.02.92: Magenta toner cartridge • 10.03.92: Yellow toner cartridgedge
+* Remedy:  1. Open front door, Remove and reinstall toner cartridge. 2. Check toner cartridge for any damage or defects. 3. Replace the toner cartridge. 4. If the error persists elevate the case using standard procedures.
