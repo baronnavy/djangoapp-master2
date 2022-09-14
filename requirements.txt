@@ -1,87 +1,40 @@
-LLC
+AutoSendデータ　LLCに関して取得できる情報
 
-* Code: 10.99.31
-* Display:  10.99.31 Non-HP supply in use.
-* Description:  The printer displays this message when a used supply (a remanufactured or refilled genuine HP or non-HP product) has been installed. The 10.99.31 is an event log only message, it will not show on the control panel. The only message to display will be Used supply in use message.
-* Remedy:  The toner cartridge has been previously used. Touch the OK to continue. NOTE: Removing a cartridge from one printer and then installing it in a different printer (for testing functionality) will cause this event code.
+第二技開の上原です。
+皆さんから、データ活用のアイデアをいただきたいと思っています。
+市場データ活用タスクで、AutoSendデータを中心に、様々な可視化を進めています。
+その中で、非純正CRGの使用状況など、有効に活用できそうなデータがあることがわかってきたので、
+紹介したいと思います。
+その上で、データを活用して知りたい事があるかを、皆さんから意見を頂きたい思います。
 
-* Code: 10.99.34
-* Display:  10.99.34 Used supply in use
-* Description:  The printer displays this message when a used supply (a remanufactured or refilled genuine HP or non-HP product) has been installed. The 10.99.34 is an event log only message, it will not show on the control panel. The only message to display will be Used supply in use message.
-* Remedy:  The toner cartridge has been previously used. Touch the OK to continue. NOTE: Removing a cartridge from one printer and then installing it in a different printer (for testing functionality) will cause this event code.
+①AutoSendデータとは
+まずは簡単にAutoSendデータについて説明します。
+ここに示すようなエンジン情報を、HPから月１回、csvファイル形式で提供してもらっているデータです。
+SWT-H以上の製品のデータがあります。
+主に、３種類のデータがあります。
+まずは、エラーの発生履歴として、エラーコードの時系列データがあります。
+次に、Usageとして、総通紙枚数や、カラーモノ印刷枚数などがあります。
+あとは、Job履歴もわかるのですが、これはP573より古い機種のみで取得できている情報なので、最近の機種ではこのJob情報はありません。
+ここにあるエラーコードに関してですが、
 
-* Code: 10.99.40
-* Display:  10.99.40 Genuine HP supplies installed
-* Description:  The printer displays this message when a new cartridge has been installed and all cartridges are Genuine HP.
-* Remedy:  Touch the (OK) to continue.
+②LLCに関するエラーコード
+LLCの寿命や装着状況に関連のものの一覧になります。
+左がCRG関連で、右がITB、定着器、TCU関連です。
+面白いところとしては、非純正CRGが挿入されたという履歴が取得できます。
+また正規CRGが挿入されたということも分かります。
+その他、誤った色のCRGが挿入されたとか、別の製品のCRGが挿入されたとか、寿命のLow、Out報知やオーバーライド使用なども分かります。
 
-* Code: 10.99.41
-* Display:  10.99.41 Unsupported Supply in use
-* Description:  The indicated toner cartridge is for a different printer.
-* Remedy:  Remove the indicated toner cartridge, and then install the correct cartridge for this printer.
+③エラー発生率の確認
+まずはCRG関連のエラーに関して、各機種でどの程度の本体でデータが取得できているか確認しました。
+このグラフは生涯に１回以上、各エラーを経験した本体が何％あるかを示したグラフです。
+例えば、AutoSendデータが取得できている本体に対して、純正品ではないCRGの挿入が一度でもあった本体は１９％あると読取ます。
 
+このように、まず各エラーが取得できていると分かりました。
 
-* Code: 10.0X.00
-* Display:  10.0X.00 Supply memory error
-* Description:  • 10.00.00 Black toner cartridge • 10.01.00 Cyan toner cartridge • 10.02.00 Magenta toner cartridge • 10.03.00 Yellow toner cartridge The printer is unable to read the toner cartridge data. The toner cartridge is present but defective. When this error occurs, a question mark appears on the gas gauge of the supply or supplies with the error. If multiple supplies have this error, a 10.0X.Y0 error for the first supply detected with the error displays. After the user resolves the error that corresponds to the first supply, another 10.0X.00 error displays for the next supply. This continues for all supplies memory errors.
-* Remedy:  1. Open the front door and remove the toner cartridge suspected. 2. Check the supplies memory chip. If it is damaged, replace the toner cartridge. 3. Reinsert the toner cartridge. 4. Close the front door.5. If the message displays again, turn the printer off, then on again.6. If the error persists, replace the toner cartridge suspected.7. If the error persists elevate the case using standard procedures.
+④活用アイデアの募集
+ここからは、知りたいこと起点のグラフを作っていきたいと考えています。
+そして、技術的に可視化できるか検討をスタートしたいと思っている。
+なので、皆さんから、知りたい事を教えていただきたいです。
+先程のエラーコードのデータを使って、どんなことが知りたいかをエクセルに追記して欲しいです。
 
-* Code: 10.0X.10
-* Display:  10.0X.10 Supply memory error
-* Description:  The printer is unable to read the toner cartridge data. The toner cartridge is present but defective. When this error occurs, a question mark appears on the gas gauge of the supply or supplies with the error. If multiple supplies have this error, a 10.0X.10 error for the first supply detected with the error displays. After the user resolves the error that corresponds to the first supply, another 10.0X.Y0 error displays for the next supply. This continues for all supplies memory errors. • 10.00.10 : Black toner cartridge • 10.01.10 : Cyan toner cartridge • 10.02.10 : Magenta toner cartridge • 10.03.10: Yellow toner cartridge
-* Remedy:  1. Open the front door and remove the toner cartridge.2. Check the supplies memory chip. If it is damaged, replace the toner cartridge.3. Reinsert the toner cartridge.4. Close the front door. If the message reappears, turn the printer off, and then on again.5. If the error persists, replace the toner cartridge.6. If the error persists elevate the case using standard procedures.
-
-* 10.0X.15
-* Display:  10.0X.15 Install <supply>
-* Description:  A supply is either not installed or not correctly installed in the printer. The 10.XX.15 is an event log only message, it will not show on the control panel. The only message to display will be Install <Supply>message. • 10.00.15: Black toner cartridge (event code) • 10.01.15: Cyan toner cartridge (event code) • 10.02.15: Magenta toner cartridge (event code) • 10.03.15: Yellow toner cartridge (event code)
-* Remedy:  Replace or reinstall the toner cartridge correctly to continue printing.
-
-* Code: 10.0X.25
-* Display:  10.0X.25 Wrong cartridge in <color> slot
-* Description:  The printer displays this message when a toner cartridge is installed in the wrong slot. The 10.XX.25 is an event log only message, it will not show on the control panel. The only message to display will be Wrong cartridge in <color> slot message. The indicated cartridge is installed in the wrong position: • 10.00.25: Black toner cartridge (event code) • 10.01.25: Cyan toner cartridge (event code) • 10.02.25: Magenta toner cartridge (event code) • 10.03.25: Yellow toner cartridge (event code)
-* Remedy:  From left to right, the toner cartridges should be installed in this order: • Yellow • Magenta • Cyan • Black Reinstall the toner cartridges in the correct slots.
-
-* Code: 10.00.33
-* Display:  10.00.33
-* Description:  A used supply is in use (end of life).
-* Remedy:  No action necessary.
-
-* Code: 10.00.34
-* Display:  10.XX.34 Used Supply In Use
-* Description:  The print cartridge is used. Black print cartridge
-* Remedy:  Removing a cartridge from one product and then installing it in a different product (for testing functionality) will cause this event code.
-
-* Code: 10.0X.35
-* Display:  10.0X.35 Incompatible <supply>
-* Description:  The printer displays this message when the indicated supply is not compatible with this printer. The 10.XX.35 is an event log only message, it will not show on the control panel. The only message to display will be Incompatible <supply> message. • 10.00.35: Black toner cartridge (event code) • 10.01.35: Cyan toner cartridge (event code) • 10.02.35: Magenta toner cartridge (event code) • 10.03.35: Yellow toner cartridge (event code)
-* Remedy:  Install a supply that is designed for this printer. See the printer repair and replacement service manual for the correct supply part numbers.
-
-* Code: 10.00.40
-* Display:  10.XX.40 Genuine HP Supplies Installed
-* Description:  A genuine HP print cartridge has been installed. Black print cartridge
-* Remedy:  No action necessary.
-
-* Code: 10.0X.60
-* Display:  10.0X.60 <Supply> low
-* Description:  The printer indicates when a supply level is low. Actual toner cartridge life might vary. You do not need to replace the toner cartridge at this time unless print quality is no longer acceptable. The 10.XX.60 is an event log only message, it will not show on the control panel. The only message to display will be <Supply> low message. • 10.00.60: Black toner cartridge (event code) • 10.01.60: Cyan toner cartridge (event code) • 10.02.60: Magenta toner cartridge (event code) • 10.03.60: Yellow toner cartridge (event code)
-* Remedy:  If print quality is no longer acceptable, replace the toner cartridge. Consider purchasing a replacement cartridge so it is available when the installed cartridge has reached the end of its estimated life.
-
-* Code: 10.0X.69
-* Display:  10.0X.69 <Supply> very low
-* Description:  The printer indicates when a supply level is very low. Actual toner cartridge life might vary. Consider having a replacement toner cartridge available to install when print quality is no longer acceptable. You do not need to replace the toner cartridge at this time unless the print quality is no longer acceptable. The 10.XX.69 is an event log only message, it will not show on the control panel. The only message to display will be <Supply> very low message. • 10.00.69: Black toner cartridge very low (event code) • 10.01.69: Cyan toner cartridge very low (event code) • 10.02.69: Magenta toner cartridge very low (event code) • 10.03.69: Yellow toner cartridge very low (event code)
-* Remedy:  If print quality is no longer acceptable, replace the toner cartridge.
-
-* Code: 10.0X.70
-* Display:  10.0X.70 Printing past very low
-* Description:  The printer indicates when one of the consumables is very low. The actual remaining consumable life might vary. You do not need to replace the toner cartridge at this time unless the print quality is no longer acceptable. The 10.XX.70 is an event log only message, it will not show on the control panel. The only message to display will be a warning message <Supply> very low . • 10.00.70: Black toner cartridge (event code) • 10.01.70: Cyan toner cartridge (event code) • 10.02.70: Magenta toner cartridge (event code) • 10.03.70: Yellow toner cartridge (event code)
-* Remedy:  If print quality is no longer acceptable, replace the toner cartridge.
-
-* Code: 10.0X.91
-* Display:  10.0X.91 <supply> error
-* Description:  Toner cartridge motor stall. • 10.00.91: Black toner cartridge • 10.01.91: Cyan toner cartridge • 10.02.91: Magenta toner cartridge • 10.03.91: Yellow toner cartridge
-* Remedy:  1. Check Event log for occurrences of 59.6X errors. If these are seen troubleshooting that error. 2. Perform the image-drum motors component test under the Troubleshooting menu. 3. Replace motor if it fails the test. If test OK replace cartridge.
-
-* Code: 10.0X.92
-* Display:  10.0X.92 <Cartridge> error
-* Description:  Toner cartridges not engaged. • 10.00.92: Black toner cartridge • 10.01.92: Cyan toner cartridge • 10.02.92: Magenta toner cartridge • 10.03.92: Yellow toner cartridgedge
-* Remedy:  1. Open front door, Remove and reinstall toner cartridge. 2. Check toner cartridge for any damage or defects. 3. Replace the toner cartridge. 4. If the error persists elevate the case using standard procedures.
+説明は以上になりますので、質問等がありましたらお願いします。
